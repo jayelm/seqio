@@ -15,18 +15,13 @@
 """Import to top-level API."""
 # pylint:disable=wildcard-import,g-bad-import-order
 
+import seqio.test_utils
+from seqio import evaluation, experimental, helpers, metrics, preprocessors
 from seqio.dataset_providers import *
-from seqio import evaluation
-from seqio import experimental
 from seqio.evaluation import Evaluator
 from seqio.feature_converters import *
-from seqio import helpers
 from seqio.loggers import *
-from seqio import metrics
-from seqio import preprocessors
-import seqio.test_utils
 from seqio.utils import *
-from seqio.vocabularies import *
-
 # Version number.
 from seqio.version import __version__
+from seqio.vocabularies import *

@@ -15,8 +15,5 @@
 """Export methods that will soon move into this module."""
 # pylint: disable=g-multiple-import
 # pylint: disable=unused-import
-from seqio.dataset_providers import (
-    get_mixture_or_task,
-    get_subtasks,
-    get_dataset,
-)
+from seqio.dataset_providers import (get_dataset, get_mixture_or_task,
+                                     get_subtasks)
