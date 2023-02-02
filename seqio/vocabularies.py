@@ -326,6 +326,11 @@ class SentencePieceVocabulary(Vocabulary):
                 score=0.0,
                 type=sentencepiece_model_pb2.ModelProto.SentencePiece.USER_DEFINED,
             )
+        model.pieces.add(
+            piece="<GIST>",
+            score=0.0,
+            type=sentencepiece_model_pb2.ModelProto.SentencePiece.USER_DEFINED,
+        )
         if self._normalizer_spec_overrides is not None:
           model.normalizer_spec.MergeFrom(self._normalizer_spec_overrides)
           model.denormalizer_spec.MergeFrom(self._normalizer_spec_overrides)
